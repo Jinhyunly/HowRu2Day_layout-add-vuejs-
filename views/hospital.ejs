@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="section">
+        <div class="container" id="hospital_header">
+            <%=username%>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container" id="map">
+            
+        </div>
+    </div>
+    <div class="section">
+        <div class="container" id="hospital_confirm">
+            현재 위치에서 가까운 병원
+        </div>
+    </div>
+    <div class="section">
+        <div class="container" id="">
+            <div class="hospital_info" id="">
+                동래 산부인과
+            </div>
+            <div class="hospital_info" id="">
+                안락 산부인과
+            </div>
+            <div class="hospital_info" id="">
+                낙민 산부인과
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container" id="hostpital_nav">
+            <div class="hospital_nav_content" id="calender">
+                캘린더
+            </div>
+            <div class="hospital_nav_content" id="cummunity">
+                커뮤니티
+            </div>
+            <div class="hospital_nav_content" id="hospital">
+                병원찾기
+            </div>
+        </div>
+    </div>
+<script src="js/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyw8_9FOYCKjFLnjbxhsrh0ZfQreqVIu0&callback=initMap&libraries=places,visualization" async defer></script>
+</body>
+</html>

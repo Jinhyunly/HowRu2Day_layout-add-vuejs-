@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HowAuToday</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="section" id="app">
+        <div id="header" class="container">
+            <div id="displayname">
+                <%=username%>
+                {{msg}}
+            </div>
+            <div id="displayCalender">
+                <div id="c1" class="displayCalender_view">
+                   <img src="icon/drop.png" alt="" style="height:10vh; width:8vh; border-radius: 50%;"> 
+                    생리예정일
+                </div>
+                <div id="c2" class="displayCalender_view">
+                    <img src="icon/flower.png" alt="" style="height:10vh; width:8vh; border-radius: 50% "> 
+                    배란예정일
+                </div>
+                <div id="c3" class="displayCalender_view">
+                    <img src="icon/cells.png" alt="" style="height:10vh; width:8vh; border-radius: 50% "> 
+                    가임기시작
+                </div>
+            </div>
+            <div id="displayDate">
+                    <h3 style="margin: 0; padding:0">04.11. 수</h3>
+                    <div id="displayDate_content">2일 지났습니다.</div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div id="info" class="container">
+            <div id="displayDate_info">
+                최근생리일: 2018.03.14 오늘의 임신확률 낮은편 <br>
+                최근 평균 주기 28일
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div id="something" class="container">
+            somthing
+        </div>
+    </div>
+    <form method="post" name="dataForm">
+        <div class="section">
+            <div id ="nav" class="container">
+                <div id="home" onclick="home()"class="nav_centent">
+                    <img src="icon/home.png" alt="" style="height:5vh; width:5vh; "/> 
+                    홈
+                </div>
+                <div id="calender" onclick="calendar()" class="nav_centent">
+                    <img src="icon/calendar.png" alt="" style="height:5vh; width:5vh; "/> 
+                    캘린더
+                </div>
+                <div id="cummunity" onclick="cummunity()" class="nav_centent">
+                    <img src="icon/community.png" alt="" style="height:5vh; width:5vh;"/>
+                    커뮤니티
+                </div>
+                <div id="hospital" onclick="hospital()" class="nav_centent">
+                    <img src="icon/location.png" alt="" style="height:5vh; width:5vh; "/>
+                    병원찾기
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+<script src="https://unpkg.com/vue"></script>
+<script type="module" src="js/app.js"></script>
+<script>
+    function home(){
+         document.dataForm.action="/"
+         document.dataForm.submit()
+    }
+    function cummunity(){
+         document.dataForm.action="/cummunity"
+         document.dataForm.submit()
+    }
+    function calendar(){
+        document.dataForm.action="/calendar"
+        document.dataForm.submit()
+    }
+    function hospital(){
+        document.dataForm.action="/hospital"
+        document.dataForm.submit()
+    }
+</script>
+</html>

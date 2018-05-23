@@ -1,0 +1,68 @@
+
+/* header */
+
+#header #displayname{
+    text-align: right;
+    height: 5vh;
+    border-bottom: 0.1px solid black;
+    background-color: lightpink;
+}
+#header #displayCalender{
+    display: flex;
+    height: 25vh;
+    justify-content: space-around;
+}
+.displayCalender_view{
+    width:33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5px;
+}
+#header #displayDate{
+    height: 15vh;
+}
+#header #displayDate_content{
+    font-size: 0.5px;
+}
+
+#header #displayDate_info{
+    font-size: 0.5px;
+    height: 10vh;
+    background-color: whitesmoke;
+}
+
+#c1:hover, #c2:hover, #c3:hover{
+    background-color: lightpink;
+}
+
+
+/* nav */
+#nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightpink;
+    color : black;
+}
+.nav_centent{
+    width:33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5px;
+}
+#calender:hover, #cummunity:hover, #hospital:hover{
+    background-color: white;
+}
+
+#community_info{
+    
+}
+#advertising{
+    
+}
+#recommend{
+   
+}

@@ -1,0 +1,319 @@
+
+/* 공통 */
+
+body{
+  margin:0;
+  padding:0;
+}
+.container{
+  text-align: center;
+}
+
+/* home layout */
+
+body{
+  margin:0;
+  padding:0;
+}
+.container{
+  text-align: center;
+}
+#header{
+  height:55vh;
+}
+#something{
+  height:30vh;
+  background-color: blanchedalmond;
+}
+#nav{
+  height:10vh;
+}
+
+
+/* home header */
+
+
+#header #displayname{
+  text-align: right;
+  height: 5vh;
+  border-bottom: 0.1px solid black;
+  background-color: lightpink;
+}
+#header #displayCalender{
+  display: flex;
+  height: 30vh;
+  justify-content: space-around;
+}
+.displayCalender_view{
+  width:33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5px;
+}
+#displayDate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: whitesmoke;
+}
+#displayDate_content{
+  font: 1px;
+}
+
+
+#c1:hover, #c2:hover, #c3:hover{
+  background-color: lightpink;
+}
+
+
+/* home nav */
+#nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: lightpink;
+  color : black;
+}
+.nav_centent{
+  width:25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5px;
+}
+#home:hover, #calender:hover, #cummunity:hover, #hospital:hover{
+  background-color: white;
+}
+
+
+
+/* cummunity */
+
+#cummunity_search{
+  height: 10vh;
+}
+
+#cummunity_contents{
+  height:80vh;
+}
+#cummunity_nav{
+  height:10vh;
+}
+
+
+/* cummunity_info */
+
+#cummunity_info_bar{
+  height:10vh;
+}
+
+#cummunity_info_likedate{
+  height:10vh;
+}
+#cummunity_info_content{
+  height:50vh;
+}
+#cummunity_info_comment{
+  height:35vh;
+}
+
+
+
+/* cummunity.html  */
+
+#cummunity_search{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  border : solid black 1px;
+}
+.cummunity_content1{
+  width:15%;
+  height:100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border : solid black 1px;
+  
+}
+.cummunity_content2{
+  width:70%;
+  height:100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border : solid black 1px;
+}
+.cummunity_content3{
+  width:15%;
+  height:100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border : solid black 1px;
+}
+.cummunity_content h3{
+  margin:0;
+}
+.cummunity_content{
+  height:20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border : solid black 1px;
+}
+
+
+
+
+/* cummunity_info */
+
+#cummunity_info_bar{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  border : solid black 1px;
+}
+.cummunity_info_content1{
+  width:15%;
+  height:100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border : solid black 1px;
+}
+.cummunity_info_content2{
+  width:70%;
+  height:100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border : solid black 1px;
+  
+}
+.cummunity_info_content3{
+  width:15%;
+  height:100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border : solid black 1px;
+}
+#cummunity_info_likedate{
+  height:100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.cummunity_info_half{
+  height:5vh;
+  width:50%;
+  border : solid black 1px;
+}
+#cummunity_info_content{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border : solid black 1px;
+}
+#cummunity_info_comment{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border : solid black 1px;
+}
+
+
+
+
+/* calendar layout */
+
+#calendar_header{
+  height:5vh;
+  background-color: pink;
+}
+#calendar_calendar{
+  height:75vh;
+  background-color: ghostwhite;
+}
+#calendar_date{
+  height:5vh;
+  background-color: palevioletred;
+}
+
+.calendar_button_info{
+  height:5vh;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+
+#calendar_header{
+  text-align: right;
+}
+#calendar_calendar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+/* hospital layout */
+
+
+#hospital_header{
+  height:5vh;
+  background-color: pink;
+}
+#map{
+  height:65vh;
+}
+#hospital_confirm{
+  height:5vh;
+  background-color: palevioletred;
+}
+
+.hospital_info{
+  height:5vh;
+  background-color:pink;
+  border: 1px solid black;
+}
+
+#hostpital_nav{
+  height:10vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: palevioletred;
+  color : black;
+}
+
+
+.hospital_nav_content{
+  width:33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5px;
+}
+  
+
+
+
+#hospital_header{
+  text-align: right;
+}
+
+
+

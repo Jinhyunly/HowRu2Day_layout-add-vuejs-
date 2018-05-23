@@ -1,0 +1,14 @@
+{
+	"first_user": {
+		"password": "first_pass",
+		"name": "abet"
+	},
+	"newuser": {
+		"password": "newpass2222",
+		"name": "jin"
+	},
+	"jin": {
+		"password": "wmdrnjs",
+		"name": "hyun"
+	}
+}

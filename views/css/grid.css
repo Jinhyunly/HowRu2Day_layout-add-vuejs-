@@ -1,0 +1,206 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+    text-align: center;
+}
+#header{
+    height:55vh;
+}
+#nav{
+    height:15vh;
+}
+.nav_content{
+    
+}
+#calender{
+    
+}
+#cummunity{
+   
+}
+#hospital{
+  
+}
+#community_info{
+    height:20vh;
+    background-color: bisque;
+}
+#advertising{
+    height:35vh;
+    background-color: palevioletred;
+}
+#recommend{
+    height:400px;
+    background-color: thistle;
+}
+
+
+
+
+
+
+
+
+
+/* community layout */
+
+#cummunity_header{
+    height:5vh;
+    background-color: red;
+}
+#cummunity_advertising{
+    height:30vh;
+    background-color: blue;
+}
+#cummunity_new{
+    height:5vh;
+    background-color: pink;
+}
+#cummunity_best{
+    height:25vh;
+    background-color: cornflowerblue;
+}
+#cummunity_recent{
+    height:5vh;
+    background-color: blueviolet;
+}
+
+#cummunity_nav{
+    height:10vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+    color : black;
+  }
+
+
+#cummunity_header{
+    text-align: right;
+}
+/* cummunity advertising */
+#cummunity_advertising{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cummunity_best_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.best1{
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.best2{
+    height:25vh;
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+}
+
+#cummunity_recent{
+    border: black 1px solid;
+    font-size: 15px;
+}
+
+.cummunity_nav_centent{
+width:33.3%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 0.5px;
+}
+
+
+
+
+/* calendar layout */
+
+#calendar_header{
+    height:5vh;
+    background-color: pink;
+}
+#calendar_calendar{
+    height:75vh;
+    background-color: ghostwhite;
+}
+#calendar_date{
+    height:5vh;
+    background-color: palevioletred;
+}
+
+.calendar_button_info{
+    height:5vh;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+
+
+#calendar_header{
+    text-align: right;
+}
+#calendar_calendar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* hospital layout */
+
+
+#hospital_header{
+    height:5vh;
+    background-color: pink;
+}
+#hospital_map{
+    height:65vh;
+    background-color: ghostwhite;
+}
+#hospital_confirm{
+    height:5vh;
+    background-color: palevioletred;
+}
+
+.hospital_info{
+    height:5vh;
+    background-color:pink;
+    border: 1px solid black;
+}
+
+#hostpital_nav{
+    height:10vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: palevioletred;
+    color : black;
+}
+
+
+.hospital_nav_content{
+    width:33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5px;
+}
+    
+
+
+#hospital_map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
