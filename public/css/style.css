@@ -76,6 +76,10 @@ body{
   justify-content: space-around;
   background-color: lightpink;
   color : black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
 }
 .nav_centent{
   width:25%;
@@ -127,8 +131,8 @@ input[type=text] {
   }
   .btn-reset {
     position: absolute;
-    top: 15px;
-    right: 55px;
+    top: 3%;
+    right: 18%;
   }
   .btn-reset::before, 
   .btn-remove::before {
@@ -198,6 +202,18 @@ input[type=text] {
   justify-content: center;
   align-items: left;
   border : solid black 1px;
+}
+
+#search-result li {
+  display: flex;
+  margin-bottom: 15px;
+}
+#search-result img {
+  width: 30%;
+  height: 30%;
+}
+#search-result ul{
+  padding: 0;
 }
 
 
@@ -271,7 +287,7 @@ input[type=text] {
   background-color: pink;
 }
 #calendar_calendar{
-  height:75vh;
+  height:65vh;
   background-color: ghostwhite;
 }
 #calendar_date{
@@ -315,11 +331,6 @@ input[type=text] {
   background-color: palevioletred;
 }
 
-.hospital_info{
-  height:5vh;
-  background-color:pink;
-  border: 1px solid black;
-}
 
 #hostpital_nav{
   height:10vh;

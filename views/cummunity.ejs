@@ -25,8 +25,21 @@
                     </div>
                 </div>
             </div>
+
+            <div v-if="submitted"> <!--어차피 우리는 디비 저장된거 다 출력이라서 기본으로 다출력해야됨(수정필요!)-->
+                <div v-if="searchResult.length" id="search-result">
+                    <ul>
+                        <li v-for="item in searchResult">
+                            <img v-bind:src="item.image"> {{item.name}}
+                        </li>
+                    </ul>
+                </div>
+                <div v-else>
+                    {{query}} 검색어로 찾을수 없습니다.
+                </div>
+            </div>
             
-            <div class="section">
+            <!--<div class="section">
                 <div id="cummunity_contents" onclick="cummunity_info()" class="">
                     <div class="cummunity_content">
                         <h3>응가가 너무 마려워요</h3> 
@@ -45,7 +58,7 @@
                         2018.05.18 댓글수:89 좋아요100
                     </div>
                 </div>
-            </div>
+            </div> -->
             
             <div class="section">
                 <div id ="nav" class="container">

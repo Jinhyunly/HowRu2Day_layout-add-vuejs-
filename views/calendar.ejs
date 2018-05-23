@@ -36,5 +36,45 @@
             </div>
         </div>
     </div>
+    <form method="post" name="dataForm">
+        <div class="section">
+            <div id ="nav" class="container">
+                <div id="home" onclick="home()"class="nav_centent">
+                    <img src="icon/home.png" alt="" style="height:5vh; width:5vh; "/> 
+                    홈
+                </div>
+                <div id="calender" onclick="calendar()" class="nav_centent">
+                    <img src="icon/calendar.png" alt="" style="height:5vh; width:5vh; "/> 
+                    캘린더
+                </div>
+                <div id="cummunity" onclick="cummunity()" class="nav_centent">
+                    <img src="icon/community.png" alt="" style="height:5vh; width:5vh;"/>
+                    커뮤니티
+                </div>
+                <div id="hospital" onclick="hospital()" class="nav_centent">
+                    <img src="icon/location.png" alt="" style="height:5vh; width:5vh; "/>
+                    병원찾기
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
+<script>
+    function home(){
+         document.dataForm.action="/"
+         document.dataForm.submit()
+    }
+    function cummunity(){
+         document.dataForm.action="/cummunity"
+         document.dataForm.submit()
+    }
+    function calendar(){
+        document.dataForm.action="/calendar"
+        document.dataForm.submit()
+    }
+    function hospital(){
+        document.dataForm.action="/hospital"
+        document.dataForm.submit()
+    }
+</script>
 </html>
