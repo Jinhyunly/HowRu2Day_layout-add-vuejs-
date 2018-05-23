@@ -9,21 +9,23 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="total">
-        <div class="section">
-            <div id="cummunity_search" class="container">
-                <div class="cummunity_content1">
-                    콤보
-                </div>
-                <div class="cummunity_content2">
-                    입력창
-                </div>
-                <div class="cummunity_content3">
-                    검색
+    <div id="app" class="total">
+        <form v-on:submit.prevent="onSubmit" method="post" name="dataForm">
+            <div class="section">
+                <div id="cummunity_search" class="container">
+                    <div class="cummunity_content1">
+                        콤보
+                    </div>
+                    <div class="cummunity_content2">
+                        <input type="text" v-model="query" v-on:keyup="onKeyup" placeholder="검색어 입력">
+                        <button v-show="query.length" v-on:click="onReset" type="reset" class="btn-reset"></button>
+                    </div>
+                    <div class="cummunity_content3">
+                        검색
+                    </div>
                 </div>
             </div>
-        </div>
-        <form method="post" name="dataForm">
+            
             <div class="section">
                 <div id="cummunity_contents" onclick="cummunity_info()" class="">
                     <div class="cummunity_content">
@@ -31,40 +33,45 @@
                         2018.05.18 댓글수:89 좋아요100
                     </div>
                     <div class="cummunity_content">
-                        <h3>제목</h3> 2018.05.18 댓글수:89 좋아요100
+                        <h3>제목</h3> 
+                        2018.05.18 댓글수:89 좋아요100
                     </div>
                     <div class="cummunity_content">
-                        <h3>제목</h3> 2018.05.18 댓글수:89 좋아요100
+                        <h3>제목</h3> 
+                        2018.05.18 댓글수:89 좋아요100
                     </div>
                     <div class="cummunity_content">
-                        <h3>제목</h3> 2018.05.18 댓글수:89 좋아요100
+                        <h3>제목</h3> 
+                        2018.05.18 댓글수:89 좋아요100
                     </div>
                 </div>
             </div>
-        
-        <div class="section">
-            <div id ="nav" class="container">
-                <div id="home" onclick="home()"class="nav_centent">
-                    <img src="icon/home.png" alt="" style="height:5vh; width:5vh; "/> 
-                    홈
-                </div>
-                <div id="calender" onclick="calendar()" class="nav_centent">
-                    <img src="icon/calendar.png" alt="" style="height:5vh; width:5vh; "/> 
-                    캘린더
-                </div>
-                <div id="cummunity" onclick="cummunity()" class="nav_centent">
-                    <img src="icon/community.png" alt="" style="height:5vh; width:5vh;"/>
-                    커뮤니티
-                </div>
-                <div id="hospital" onclick="hospital()" class="nav_centent">
-                    <img src="icon/location.png" alt="" style="height:5vh; width:5vh; "/>
-                    병원찾기
+            
+            <div class="section">
+                <div id ="nav" class="container">
+                    <div id="home" onclick="home()"class="nav_centent">
+                        <img src="icon/home.png" alt="" style="height:5vh; width:5vh; "/> 
+                        홈
+                    </div>
+                    <div id="calender" onclick="calendar()" class="nav_centent">
+                        <img src="icon/calendar.png" alt="" style="height:5vh; width:5vh; "/> 
+                        캘린더
+                    </div>
+                    <div id="cummunity" onclick="cummunity()" class="nav_centent">
+                        <img src="icon/community.png" alt="" style="height:5vh; width:5vh;"/>
+                        커뮤니티
+                    </div>
+                    <div id="hospital" onclick="hospital()" class="nav_centent">
+                        <img src="icon/location.png" alt="" style="height:5vh; width:5vh; "/>
+                        병원찾기
+                    </div>
                 </div>
             </div>
-        </div>
         </form>
     </div>
 </body>
+<script src="https://unpkg.com/vue"></script>
+<script type="module" src="js/app.js"></script>
 <script>
     function cummunity_info(){
          document.dataForm.action="/cummunityinfo"
